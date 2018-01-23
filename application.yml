@@ -10,4 +10,10 @@ spring:
 graphite:
   host: 172.17.0.1
   port: 2003
-    
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9010/eureka
