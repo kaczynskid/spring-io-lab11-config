@@ -1,4 +1,13 @@
-some:
-  common:
-    prop: with common value
+management:
+  security:
+    enabled: false
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+graphite:
+  host: 172.17.0.1
+  port: 2003
     
