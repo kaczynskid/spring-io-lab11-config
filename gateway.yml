@@ -1,0 +1,11 @@
+server:
+  port: 9999
+
+zuul:
+  routes:
+    warehouse:
+      path: /items/**
+      stripPrefix: false
+    store:
+      path: /baskets/**
+      stripPrefix: false
