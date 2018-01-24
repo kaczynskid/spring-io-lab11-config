@@ -14,9 +14,18 @@ graphite:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5
+  metadataMap:
+    cluster: "default"
   client:
     serviceUrl:
-      defaultZone: http://localhost:9010/eureka
+      defaultZone: "http://localhost:9010/eureka"
+
+hystrix:
+  metrics:
+    enabled: true
+  stream:
+    endpoint:
+      enabled: true
 
 feign:
   hystrix:
