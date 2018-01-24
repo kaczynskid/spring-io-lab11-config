@@ -30,3 +30,15 @@ hystrix:
 feign:
   hystrix:
     enabled: true
+
+---
+
+spring:
+  zipkin:
+    baseUrl: "http://localhost:9030/"
+  sleuth:
+    sampler:
+      percentage: 1.0
+    log:
+      json:
+        enabled: true
