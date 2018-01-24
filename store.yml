@@ -3,10 +3,6 @@ server:
 
 spring:
   datasource:
-    url: "jdbc:h2:mem:store;MODE=MySQL;IGNORECASE=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false;INIT=RUNSCRIPT FROM 'classpath:db/init_h2.sql';"
-#    url: jdbc:mysql://${MYSQL_PORT_3306_TCP_ADDR:localhost}:${MYSQL_PORT_3306_TCP_PORT:3306}/store?autoReconnect=true&useSSL=false
-#    username: root
-#    password: sprio
-  jpa:
-    hibernate:
-      ddl-auto: none
+    url: jdbc:mysql://${MYSQL_PORT_3306_TCP_ADDR:localhost}:${MYSQL_PORT_3306_TCP_PORT:3306}/store?autoReconnect=true&useSSL=false
+    username: root
+    password: sprio
